@@ -1,0 +1,93 @@
+
+body{
+    background: linear-gradient(hsl(232,19%,15%) 40%, hsl(230, 17%, 14%) 5%);
+}
+p{
+    margin: 0px;
+    font-size: 20px;
+}
+main{
+    width: 70%;
+    margin: 20px auto;
+    /* border: 1px solid wheat; */
+}
+header{
+    color: hsl(0, 0%, 100%);
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+header h2{
+    margin-bottom: 0px;
+}
+.title{
+    flex-direction: column;
+}
+.mode{
+    justify-content: center;
+    align-items: center;
+}
+.mode >div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+.checkbox{
+    position: absolute;
+    opacity: 0;
+}
+.label{
+    position: relative;
+    display: flex;
+    width: 50px !important;
+    height: 20px;
+    transform: scale(1.5);
+    border-radius: 50px;
+    background: linear-gradient(to right, hsl(210,78%,56%), hsl(146, 68%, 55%));
+}
+.ball{
+    position: absolute !important;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    background: hsl(232,19%,15%);
+    border-radius: 50%;
+    transition: 0.2s cubic-bezier(0.77, 0, 1, 1);
+    /* transition: 0.2s linear; */
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(29px);
+    background: white;
+}
+.grid{
+    display: grid;
+    grid-row: gap 20px !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 100%;
+}
+.flex{
+    display: flex;
+}
+.card{
+    flex-direction: column;
+    background-color: hsl(228, 28%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 30px 20px;
+}
+.card h1{
+    font-size: 4em;
+    font: 700;
+    margin: 0px;
+    margin-top: 15px;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.med-bottom{
+    margin-top: 20px;
+}
+.media p{
+    font-size: 14px !important;
+}

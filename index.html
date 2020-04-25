@@ -9,114 +9,123 @@
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <header>
-    <div>
-      <h2>Social Media Dashboard</h2>
-      <p>Total Followers : 23,004</p>
-    </div>
-    <div>
-      <h3>Dark Mode</h3>
-    </div>
-  </header>
-
-  <div>
-    <div>
-      <div><i>ff</i><p>@nathanf</p></div>
-      <h1>1987</h1>
-      <p>Followers</p>
-      <div><i>up</i><p>12 Today</p>
+  <main>
+    <header class="flex">
+      <div class="title flex">
+        <h2>Social Media Dashboard</h2>
+        <p>Total Followers : 23,004</p>
       </div>
-    </div>
-    <div>
-      <div><i>tw</i><p>@nathanf</p></div>
-      <h1>1044</h1>
-      <p>Followers</p>
-      <div><i>up</i><p>99 Today</p>
-    </div>
-    <div>
-      <div><i>ig</i><p>@realnathanf</p></div>
-      <h1>11k</h1>
-      <p>Followers</p>
-      <div><i>up</i><p>1099 Today</p>
-    </div>
-      <div>
-        <div><i>yt</i><p>@Nathan F.</p></div>
+      <div class="mode flex">
+        <h3>Dark Mode</h3>
+        <div>
+          <input type="checkbox" id="checkbox" class="checkbox">
+          <label for="checkbox" class="label"><div class="ball"></div></label>
+        </div>
+      </div>
+    </header>
+  
+    <div class="grid grid1">
+      <div class='flex card center'>
+        <div class='flex center media'><i>ff</i><p>@nathanf</p></div>
+        <h1>1987</h1>
+        <p>Followers</p>
+        <div class='flex center media med-bottom'><i>up</i><p>12 Today</p></div>
+      </div>
+      <div class='flex card center'>
+        <div class='flex center media'><i>tw</i><p>@nathanf</p></div>
+        <h1>1044</h1>
+        <p>Followers</p>
+        <div class='flex center media med-bottom'><i>up</i><p>99 Today</p></div>
+      </div>
+      <div class='flex card center'>
+        <div class='flex center media'><i>ig</i><p>@realnathanf</p></div>
+        <h1>11k</h1>
+        <p>Followers</p>
+        <div class='flex center media med-bottom'><i>up</i><p>1099 Today</p></div>
+      </div>
+      <div class='flex card center'>
+        <div class='flex center media'><i>yt</i><p>@Nathan F.</p></div>
         <h1>8239</h1>
         <p>Subscribers</p>
-        <div><i>up</i><p>144 Today</p>
+        <div class='flex center media med-bottom'><i>up</i><p>144 Today</p></div>
+      </div>
     </div>
-  </div>
 
-  <div><h2>Overview - Today</h2></div>
-
-  <div>
-    <div>
-      <div><p>Page Views</p> <i>ff</i></div>
-      <div>
-        <h3>87</h3>
-        <div><i>up</i><p>3%</p>
+    <div style="display: block;"><h2>Overview - Today</h2></div>
+  
+    <div class="grid grid2">
+      <div class='flex card'>
+        <div class='flex'><p>Page Views</p> <i>ff</i></div>
+        <div class='flex'>
+          <h3>87</h3>
+          <div class='flex'><i>up</i><p>3%</p></div>
+        </div>
+      </div>
+      <div class='flex card'>
+        <div class='flex'><p>Likes</p> <i>ff</i></div>
+        <div class='flex'>
+          <h3>52</h3>
+          <div class='flex'><i>up</i><p>2%</p></div>
+        </div>
+      </div>
+      <div class="flex card">
+        <div class='flex'><p>Likes</p> <i>ig</i></div>
+        <div class='flex'>
+          <h3>5462</h3>
+          <div class='flex'><i>up</i><p>2257%</p></div>
+        </div>
+      </div>
+      <div class='flex card'>
+        <div class='flex'><p>Profile Views</p> <i>ig</i></div>
+        <div class='flex'>
+          <h3>52k</h3>
+          <div class='flex'><i>up</i><p>1375%</p></div>
+        </div>
+      </div>
+      <div class='flex card'>
+        <div class='flex'><p>Retweets</p> <i>tw</i></div>
+        <div class='flex'>
+          <h3>117</h3>
+          <div class='flex'><i>up</i><p>303%</p></div>
+        </div>
+      </div>
+      <div class='flex card'>
+        <div class='flex'><p>Likes</p> <i>tw</i></div>
+        <div class='flex'>
+          <h3>507</h3>
+          <div class='flex'><i>up</i><p>553%</p></div>
+        </div>
+      </div>
+      <div class='flex card'>
+        <div class='flex'><p>Likes</p> <i>yt</i></div>
+        <div class='flex'>
+          <h3>107</h3>
+          <div class='flex'><i>up</i><p>19%</p></div>
+        </div>
+      </div>
+      <div class='flex card'>
+        <div class='flex'><p>Total Views</p> <i>ff</i></div>
+        <div class='flex'>
+          <h3>1407</h3>
+          <div class='flex'><i>up</i><p>12%</p></div>
+        </div>
       </div>
     </div>
-    <div>
-      <div><p>Likes</p> <i>ff</i></div>
-      <div>
-        <h3>52</h3>
-        <div><i>up</i><p>2%</p>
-      </div>
-    </div>
-    <div>
-      <div><p>Likes</p> <i>ig</i></div>
-      <div>
-        <h3>5462</h3>
-        <div><i>up</i><p>2257%</p>
-      </div>
-    </div>
-    <div>
-      <div><p>Profile Views</p> <i>ig</i></div>
-      <div>
-        <h3>52k</h3>
-        <div><i>up</i><p>1375%</p>
-      </div>
-    </div>
-    <div>
-      <div><p>Retweets</p> <i>tw</i></div>
-      <div>
-        <h3>117</h3>
-        <div><i>up</i><p>303%</p>
-      </div>
-    </div>
-    <div>
-      <div><p>Likes</p> <i>tw</i></div>
-      <div>
-        <h3>507</h3>
-        <div><i>up</i><p>553%</p>
-      </div>
-    </div>
-    <div>
-      <div><p>Likes</p> <i>yt</i></div>
-      <div>
-        <h3>107</h3>
-        <div><i>up</i><p>19%</p>
-      </div>
-    </div>
-    <div>
-      <div><p>Total Views</p> <i>ff</i></div>
-      <div>
-        <h3>1407</h3>
-        <div><i>up</i><p>12%</p>
-      </div>
-    </div>
-  </div>
+  
+   
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Akinnagbe Oluwasegun</a>.
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>

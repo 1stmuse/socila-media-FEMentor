@@ -6,6 +6,9 @@ p{
     margin: 0px;
     font-size: 20px;
 }
+h3,p{
+    color: hsl(228, 12%, 44%);
+}
 main{
     width: 70%;
     margin: 20px auto;
@@ -75,11 +78,32 @@ header h2{
     color: hsl(0, 0%, 100%);
     padding: 30px 20px;
 }
+.grid .card:not(:first-child), .grid .card:not(:nth-child(4)) {
+    margin-left: 20px;
+}
 .card h1{
     font-size: 4em;
     font: 700;
     margin: 0px;
     margin-top: 15px;
+}
+p.stretch{
+    transform: scale(1.5, 1);
+}
+.grid2 .card{
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.grid2 .card >:nth-child(2){
+    margin-top: 30px;
+}
+.grid2 h3{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
 }
 .center{
     justify-content: center;
@@ -88,6 +112,23 @@ header h2{
 .med-bottom{
     margin-top: 20px;
 }
+.med-bottom p, .green p{
+    color: hsl(163, 72%, 41%);
+}
+.media img{
+    margin-right: 8px;
+}
 .media p{
     font-size: 14px !important;
+}
+.btw{
+    justify-content: space-between;
+    margin-left: 0px;
+}
+.btw >div p{
+    font-size: 14px;
+    margin: 0px;
+}
+.btw > p{
+    font-size: 14px;
 }

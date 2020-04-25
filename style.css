@@ -94,10 +94,42 @@ header hr{
 .flex{
     display: flex;
 }
+.fb{
+    border-radius: 10px;
+    border-top: 5px solid hsl(195, 100%, 50%);
+}
+.tw{
+    border-radius: 10px;
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+.ig{box-sizing: border-box; background-clip: padding-box; border-radius: 10px;}
+.ig::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 6px;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: linear-gradient(to right, hsl(210,78%,56%), hsl(146, 68%, 55%));;
+}
+/* .ig{
+    border-radius: 10px;
+    border-top: 5px solid;
+    border-color: linear-gradient(to right, hsl(210,78%,56%), hsl(146, 68%, 55%));
+} */
+.yt{
+    border-radius: 10px;
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
 .card{
     flex-direction: column;
     padding: 30px 20px;
     margin-bottom: 30px;
+    position: relative;
 }
 .crd-dk-thm:hover{
     background-color: hsl(227, 24%, 27%);
